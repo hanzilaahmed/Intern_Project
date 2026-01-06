@@ -36,6 +36,9 @@ app.get("/api/test", (req, res) => {
   res.json({ message: "API is working" });
 });
 
+
+// ====================  CREAT USER ROUTER ==================== //
+
 app.use("/api/user" , userRouter)
 
 

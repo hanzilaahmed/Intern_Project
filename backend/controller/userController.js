@@ -12,7 +12,7 @@ export const  adduser = (req, res) =>{
     const id = users.length + 1;
     const newUser = {id, name, email};
     users.push(newUser);
-    res.status(400).json({success:true,
+    res.status(201).json({success:true,
         message:"User Add Successfully",
         data:newUser
     })
