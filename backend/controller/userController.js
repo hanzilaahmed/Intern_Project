@@ -36,6 +36,8 @@ export const getById = (req , res) =>{
   res.json(user);
 }
 
+// ============================== UPDATE USER BY ID ============================== //
+
 export const updateUser = (req, res) => {
   const userId = parseInt(req.params.id);
   const { name, email } = req.body;
